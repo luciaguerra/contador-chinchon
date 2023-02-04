@@ -8,7 +8,7 @@
 
 :root {
     /*CLORES*/
-    --rojo: #ca4a39;
+    --rojo: #ca3e2b;
     --rojovariacion: #ca4a39;
     --amarillo: #FFF300;
     --grisazul: #E7F3F3;
@@ -106,6 +106,10 @@ button {
     font-weight: 500;
 }
 
+button:hover {
+    background-color: var(--rojo);
+}
+
 .credito {
     font-size: 0.7rem;
     margin: 1rem;
@@ -113,30 +117,99 @@ button {
     color: var(--grisazul);
 }
 
+@media only screen and (orientation: landscape) {
+    .container {
+        width: 80%;
+    }
+
+    .tablero {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    main {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+    
+    .container {
+        width: 90%;
+    }
+
+    .tablero {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tablero {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 100%;
+        height: 60%;
+        padding: 4rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        margin: 0.7rem;
+    }
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .tablero {
+        width: 90%;
+        margin: 0.5em;
+        padding: 1rem 0.6rem;
+    }
+    
+    .credito {
+        margin: 0.5rem;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
     main {
-        padding: 0.6rem 0.5rem;
+        width: 100%;
+        padding: 4rem 0rem;
     }
 
     .container {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
     }
 
     .tablero {
         width: 100%;
-        padding: 0.8rem;
         margin-bottom: 1rem;
-    }
-
-    img {
-        width: 10vw;
     }
 
     h1 {
         font-size: 2rem;
+        margin: 0.5rem;
     }
 
     button {
@@ -144,9 +217,13 @@ button {
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
+    main {
+        height: 100%;
+    }
     h1 {
         font-size: 1.8rem;
+        padding-bottom: 0;
     }
 
     button {
@@ -154,18 +231,17 @@ button {
     }
 
     .container {
-        width: 90%;
+        width: 85%;
         justify-content: center;
         align-items: center;
     }
 
     .tablero {
         width: 100%;
-        height: 10%;
-    }
-
-
-    img {
-        width: 10vw;
     }
 }
+
+
+
+
+

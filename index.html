@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="keywords" content="chinchon, cartas, juegos">
+    <meta name="description" content="Contador online de puntos para el chinchón, para cuando no tengas lápiz y papel, ¿no? 🃏"
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Contador de chinchón</title>
+    <title>Contador de chinchón 🃏</title>
 </head>
 <body>
     <main>
@@ -19,9 +20,11 @@
                     <p id="puntaje-1">0</p>
                 </div>
                 <div class="botones">
-                    <button onclick="add1Point()">+1</button>
-                    <button onclick="add5Points()">+5</button>
-                    <button onclick="add10Points()">+10</button>
+                    <button onclick="add1Point_1()">+1</button>
+                    <button onclick="add5Points_1()">+5</button>
+                    <button onclick="add10Points_1()">+10</button>
+                    <button onclick="subtract10Points_1()">-10</button>
+
                 </div>
             </div>
             <div class="tablero">
@@ -30,16 +33,17 @@
                     <p id="puntaje-2">0</p>
                 </div>
                 <div class="botones">
-                    <button onclick="add1Point()">+1</button>
-                    <button onclick="add5Points()">+5</button>
-                    <button onclick="add10Points()">+10</button>
+                    <button onclick="add1Point_2()">+1</button>
+                    <button onclick="add5Points_2()">+5</button>
+                    <button onclick="add10Points_2()">+10</button>
+                    <button onclick="subtract10Points_2()">-10</button>
                 </div>
             </div>
         </div>
 
         <p class="credito">© Lucía Guerra Castro, 2023</p>  
     </main>
-    
+
     <script src="js/codigo.js"></script>
 </body>
 </html>

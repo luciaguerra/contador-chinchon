@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contador de chinchón</title>
+</head>
+<body>
+    <main>
+        <h1>Contador de chinchón</h1>
+
+        <div class="container">
+            <div class="tablero">
+                <h3>JUGADOR 1</h3>
+                <div class="tablero-2">
+                    <p id="puntaje-1">0</p>
+                </div>
+                <div class="botones">
+                    <button onclick="add1Point()">+1</button>
+                    <button onclick="add5Points()">+5</button>
+                    <button onclick="add10Points()">+10</button>
+                </div>
+            </div>
+            <div class="tablero">
+                <h3>JUGADOR 2</h3>
+                <div class="tablero-2">
+                    <p id="puntaje-2">0</p>
+                </div>
+                <div class="botones">
+                    <button onclick="add1Point()">+1</button>
+                    <button onclick="add5Points()">+5</button>
+                    <button onclick="add10Points()">+10</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="credito">© Lucía Guerra Castro, 2023</p>  
+    </main>
+    
+    <script src="js/codigo.js"></script>
+</body>
+</html>

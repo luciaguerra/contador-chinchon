@@ -7,6 +7,7 @@
     <meta name="keywords" content="chinchon, cartas, juegos">
     <meta name="description" content="Contador online de puntos para el chinchón, para cuando no tengas lápiz y papel, ¿no? 🃏">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Contador de chinchón 🃏</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="tablero">
                 <h3>JUGADOR 1</h3>
-                <div class="tablero-2">
+                <div class="tablero-puntaje">
                     <p id="puntaje-1">0</p>
                 </div>
                 <div class="botones">
@@ -29,7 +30,7 @@
             </div>
             <div class="tablero">
                 <h3>JUGADOR 2</h3>
-                <div class="tablero-2">
+                <div class="tablero-puntaje">
                     <p id="puntaje-2">0</p>
                 </div>
                 <div class="botones">
@@ -39,6 +40,9 @@
                     <button onclick="subtract10Points_2()">-10</button>
                 </div>
             </div>
+        </div>
+        <div class="boton-reinicio">
+            <button id="reiniciar" onclick="restartGame()"><span class="material-icons md-36">refresh</span></button>
         </div>
 
         <p class="credito">© Lucía Guerra Castro, 2023</p>  

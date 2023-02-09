@@ -32,18 +32,24 @@ body, button {
     font-family: 'Poppins', sans-serif;
 }
 
-body, main, div.tablero-2, .botones {
+body, main, div.tablero-puntaje, .botones, .boton-reinicio {
     justify-content: center;
     align-items: center;
 }
 
+main, .tablero, div.tablero-puntaje {
+    width: 100%;
+}
+
 main {
     flex-direction: column;
+
+    height: 100vh;
     margin: 1rem;
     padding: 7vw;
 }
 
-body, main, .container, div.tablero-2, .botones {
+body, main, .container, div.tablero-puntaje, .botones, .boton-reinicio {
     display: flex;
 }
 
@@ -57,13 +63,11 @@ body, main, .container, div.tablero-2, .botones {
     padding: 1.5rem;
     background-color: var(--grisvariacion);
     border-radius: 2rem;
-    width: 100%;
 }
 
 
-div.tablero-2 {
+div.tablero-puntaje {
     background-color: var(--grisazul);
-    width: 100%;
     height: 6.5rem;
     border-radius: 1.3rem;
 }
@@ -80,7 +84,7 @@ h1, h3 {
     line-height: 1;
 }
 
-h1, h3, #puntaje-1, #puntaje-2 {
+h1, h3, #puntaje-1, #puntaje-2, .boton-reinicio {
     text-align: center;
 }
 
@@ -108,6 +112,20 @@ button {
 
 button:hover {
     background-color: var(--rojo);
+}
+
+button#reiniciar {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+.material-icons {
+    color: var(--grisazul);
+    
+}
+
+.material-icons.md-36 {
+    font-size: 2.5rem;
 }
 
 .credito {

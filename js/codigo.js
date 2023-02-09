@@ -43,3 +43,11 @@ function subtract10Points_2() {
     puntajeDos -= 10;
     resultadoDos.textContent = puntajeDos;
 }
+
+function restartGame() {
+    puntajeUno = 0;
+    puntajeDos = 0;
+
+    resultadoUno.textContent = puntajeUno;
+    resultadoDos.textContent = puntajeDos;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,41 +13,37 @@
 <body>
     <main>
         <h1>Contador de chinchón</h1>
-
-        <div class="container">
-            <div class="tablero">
-                <h3>JUGADOR 1</h3>
+        <section class="container">
+            <article class="tablero">
+                <h2>JUGADOR 1</h2>
                 <div class="tablero-puntaje">
                     <p id="puntaje-1">0</p>
                 </div>
                 <div class="botones">
-                    <button onclick="add1Point_1()">+1</button>
-                    <button onclick="add5Points_1()">+5</button>
-                    <button onclick="add10Points_1()">+10</button>
-                    <button onclick="subtract10Points_1()">-10</button>
-
+                    <button id="add1-1">+1</button>
+                    <button id="add5-1">+5</button>
+                    <button id="add10-1">+10</button>
+                    <button id="sub10-1">-10</button>
                 </div>
-            </div>
-            <div class="tablero">
-                <h3>JUGADOR 2</h3>
+            </article>
+            <article class="tablero">
+                <h2>JUGADOR 2</h2>
                 <div class="tablero-puntaje">
                     <p id="puntaje-2">0</p>
                 </div>
                 <div class="botones">
-                    <button onclick="add1Point_2()">+1</button>
-                    <button onclick="add5Points_2()">+5</button>
-                    <button onclick="add10Points_2()">+10</button>
-                    <button onclick="subtract10Points_2()">-10</button>
+                    <button id="add1-2">+1</button>
+                    <button id="add5-2">+5</button>
+                    <button id="add10-2">+10</button>
+                    <button id="sub10-2">-10</button>
                 </div>
-            </div>
-        </div>
-        <div class="boton-reinicio">
+            </article>
+        </section>
+        <aside class="boton-reinicio">
             <button id="reiniciar" onclick="restartGame()"><span class="material-icons md-36">refresh</span></button>
-        </div>
-
+        </aside>
         <p class="credito">© Lucía Guerra Castro, 2023</p>  
     </main>
-
     <script src="js/codigo.js"></script>
 </body>
 </html>
